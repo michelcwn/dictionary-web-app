@@ -5,6 +5,8 @@
 *.sketch
 *.fig
 node_modules
+dist
+.parcel-cache
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################

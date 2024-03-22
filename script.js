@@ -189,7 +189,6 @@ form.addEventListener("submit", function (e) {
 //////////////////////////////////////////////////////////////
 // CHANGE FONT
 //////////////////////////////////////////////////////////////
-
 document.querySelector(".header__font").addEventListener("click", function () {
   let dropdown = document.querySelector(".dropdown-menu");
   dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";

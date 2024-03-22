@@ -2,13 +2,14 @@
   "name": "dictionary-web-app",
   "version": "1.0.0",
   "description": "![Design preview for the Dictionary web app coding challenge](./preview.jpg)",
-  "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style/sass/main.scss:style/css/style.css"
+    "sass": "sass --watch style/sass/main.scss:style/css/style.css",
+    "build": "parcel build index.html"
   },
   "author": "michelcwn",
   "license": "ISC",
   "devDependencies": {
+    "parcel": "^2.12.0",
     "sass": "^1.72.0"
   }
 }

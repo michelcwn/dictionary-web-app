@@ -165,20 +165,20 @@ body {
 
 @font-face {
   font-family: "Inconsolata";
-  src: url(../../../assets/fonts/inconsolata/Inconsolata-VariableFont.ttf);
+  src: url(../../assets/fonts/inconsolata/Inconsolata-VariableFont.ttf);
 }
 @font-face {
   font-family: "Inter";
-  src: url(../../../assets/fonts/inter/Inter-VariableFont.ttf);
+  src: url(../../assets/fonts/inter/Inter-VariableFont.ttf);
 }
 @font-face {
   font-family: "Lora";
-  src: url(../../../assets/fonts/lora/Lora-VariableFont.ttf);
+  src: url(../../assets/fonts/lora/Lora-VariableFont.ttf);
   font-style: normal;
 }
 @font-face {
   font-family: "Lora";
-  src: url(../../../assets/fonts/lora/Lora-Italic-VariableFont.ttf);
+  src: url(../../assets/fonts/lora/Lora-Italic-VariableFont.ttf);
   font-style: italic;
 }
 h1 {
@@ -645,7 +645,11 @@ hr {
   padding: 1rem 2rem;
   z-index: 1;
   top: 10rem;
-  right: 70rem;
+}
+@media (max-width: 885px) {
+  .header__font .dropdown-menu {
+    top: 7rem;
+  }
 }
 .header__font .dropdown-menu .dropdown-item {
   color: black;
