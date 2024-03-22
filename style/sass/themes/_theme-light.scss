@@ -1,0 +1,15 @@
+// Dans _theme-light.scss
+body.theme-light {
+  background-color: $color-white;
+  color: $color-darkslate;
+
+  .header {
+    background-color: $color-white;
+  }
+
+  .header__input,
+  .header__search-icon {
+    background-color: $color-cultured;
+    color: $color-darkslate;
+  }
+}

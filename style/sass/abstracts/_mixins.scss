@@ -1,0 +1,34 @@
+// Mixins for typography
+@mixin typography($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == phone {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  } @else if $breakpoint == s {
+    @media (max-width: $breakpoint-s) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}

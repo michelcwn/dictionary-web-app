@@ -1,0 +1,14 @@
+{
+  "name": "dictionary-web-app",
+  "version": "1.0.0",
+  "description": "![Design preview for the Dictionary web app coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style/sass/main.scss:style/css/style.css"
+  },
+  "author": "michelcwn",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

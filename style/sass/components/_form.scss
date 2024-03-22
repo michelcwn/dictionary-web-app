@@ -1,0 +1,59 @@
+.header__form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80rem;
+  @include respond-to(md) {
+    min-width: 60rem;
+  }
+  @include respond-to(sm) {
+    min-width: 50rem;
+  }
+  @include respond-to(sm) {
+    min-width: 40rem;
+  }
+  @include respond-to(phone) {
+    min-width: 35rem;
+  }
+  @include respond-to(xs) {
+    min-width: 30rem;
+  }
+
+  .header__input {
+    flex: 1;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    background-color: $color-cultured;
+    border-radius: 1rem;
+    color: $color-darkslate;
+    font-weight: 600;
+    font-size: $font-size-body-m;
+
+    &:focus {
+      border: 1px solid $color-hanpurple;
+    }
+  }
+
+  .header__submit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover .header__search-icon path {
+      stroke: $color-hanpurple;
+    }
+  }
+}

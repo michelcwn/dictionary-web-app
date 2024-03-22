@@ -1,0 +1,14 @@
+body.theme-dark {
+  background-color: $color-darkslate;
+  color: $color-white;
+
+  .header {
+    background-color: $color-darkslate;
+  }
+
+  .header__input,
+  .header__search-icon {
+    background-color: $color-charcoal;
+    color: $color-white;
+  }
+}

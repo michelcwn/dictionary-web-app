@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/css/style.css" />
+    <title>Dictionary web app</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <img src="assets/images/logo.svg" alt="Logo" class="header__logo" />
+        <div class="header__right">
+          <div class="header__font">
+            <p class="header__font-paragraph">Sans Serif</p>
+            <div class="dropdown-menu hidden">
+              <a class="dropdown-item serif" href="#">Serif</a>
+              <a class="dropdown-item sans-serif" href="#">Sans Serif</a>
+              <a class="dropdown-item mono" href="#">Mono</a>
+            </div>
+
+            <svg
+              class="header__font-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+            >
+              <path
+                fill="none"
+                stroke="#A445ED"
+                stroke-width="1.5"
+                d="m1 1 6 6 6-6"
+              />
+            </svg>
+          </div>
+          <div id="theme-toggle" class="toggle-switch">
+            <div class="toggle-slider"></div>
+          </div>
+
+          <svg
+            class="header__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+          >
+            <path
+              fill="none"
+              stroke="#838383"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <form action="" class="header__form">
+        <input type="text" placeholder="Search a word" class="header__input" />
+        <button type="submit" class="header__submit-btn">
+          <svg
+            class="header__search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+          >
+            <path
+              fill="none"
+              stroke="#A445ED"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m12.663 12.663 3.887 3.887M1 7.664a6.665 6.665 0 1 0 13.33 0 6.665 6.665 0 0 0-13.33 0Z"
+            />
+          </svg>
+        </button>
+      </form>
+      <label for="" class="label-err hidden">Whoops, can’t be empty…</label>
+    </header>
+
+    <main class="main-content hidden">
+      <section class="main-content__section main-content__section--top">
+        <div class="main-content__header">
+          <h1 class="main-content__title"></h1>
+          <audio id="audioPlayer"></audio>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="75"
+            height="75"
+            viewBox="0 0 75 75"
+            class="main-content__icon main-content__icon--play"
+          >
+            <g fill="#A445ED" fill-rule="evenodd">
+              <circle
+                cx="37.5"
+                cy="37.5"
+                r="37.5"
+                opacity=".25"
+                class="play-circle"
+              />
+              <path d="M29 27v21l21-10.5z" class="play-arrow" />
+            </g>
+          </svg>
+        </div>
+        <p class="main-content__phonetic"></p>
+      </section>
+
+      <section class="main-content__section main-content__section--details">
+        <h2 class="main-content__subtitle">Noun</h2>
+        <p class="main-content__text">Meaning</p>
+        <ul class="main-content__list main-content__list--noun"></ul>
+        <div class="main-content__synonyms">
+          <p class="main-content__synonyms-title">Synonyms</p>
+          <p class="main-content__synonyms-definition"></p>
+        </div>
+      </section>
+      <section class="main-content__section main-content__section--verb">
+        <h2 class="main-content__subtitle">verb</h2>
+        <p class="main-content__text">Meaning</p>
+        <ul class="main-content__list main-content__list--verb">
+          <li class="main-content__item no-content-found hidden">
+            There are no Verbs
+          </li>
+        </ul>
+        <p class="main-content__quote body-text-m"></p>
+      </section>
+      <hr class="main-content__divider" />
+      <div class="main-content__source">
+        <span class="main-content__source-label body-text-s">Source</span>
+        <a href="" class="main-content__source-link" target="_blank">
+          <img src="assets/images/icon-new-window.svg" alt="new windows"
+        /></a>
+      </div>
+    </main>
+    <div id="errorContentNotFound" class="error-content hidden">
+      <span class="error-content__emoji">😅</span>
+      <h2 class="error-content__title">No Definitions Found</h2>
+      <p class="error-content__message">
+        Sorry pal, we couldn't find definitions for the word you were looking
+        for. You can try the search again at later time or head to the web
+        instead.
+      </p>
+    </div>
+  </body>
+</html>

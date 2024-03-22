@@ -1,0 +1,21 @@
+.label-err {
+  margin-top: 0.5rem;
+  color: red;
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  &__emoji {
+    font-size: 10rem;
+  }
+  &__title {
+    margin: 2.5rem 0;
+  }
+  &__message {
+    color: $color-spanishgray;
+  }
+}

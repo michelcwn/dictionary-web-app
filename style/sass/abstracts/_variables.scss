@@ -1,0 +1,40 @@
+// Grays
+$color-darkslate: #050505; // RGB(5, 5, 5)
+$color-gunmetal: #1f1f1f; // RGB(31, 31, 31)
+$color-charcoal: #2d2d2d; // RGB(45, 45, 45)
+$color-davysgray: #3a3a3a; // RGB(58, 58, 58)
+$color-spanishgray: #757575; // RGB(117, 117, 117)
+$color-gainsboro: #e9e9e9; // RGB(233, 233, 233)
+$color-cultured: #f4f4f4; // RGB(244, 244, 244)
+$color-white: #ffffff; // RGB(255, 255, 255)
+
+// Colors
+$color-hanpurple: #a445ed;
+$color-imperialred: #ff5252;
+
+// Font families
+$font-family-sans-serif: "Inter", sans-serif;
+$font-family-serif: "Lora", serif;
+$font-family-mono: "Inconsolata", monospace;
+
+// Font sizes
+$font-size-heading-l: 64px;
+$font-size-heading-m: 24px;
+$font-size-heading-s: 20px;
+$font-size-body-m: 18px;
+$font-size-body-s: 14px;
+
+// Line heights
+$line-height-heading-l: 77px;
+$line-height-heading-m: 29px;
+$line-height-heading-s: 24px;
+$line-height-body-m: 24px;
+$line-height-body-s: 17px;
+
+// Breakpoints
+$breakpoint-xs: 370px; // Petits écrans, téléphones
+$breakpoint-phone: 420px; // phone
+$breakpoint-s: 520px; // Écrans moyens, tablettes
+$breakpoint-sm: 640px; // Écrans moyens, tablettes
+$breakpoint-md: 885px; // Écrans larges, ordinateurs de bureau
+$breakpoint-lg: 1366px; // Très larges écrans

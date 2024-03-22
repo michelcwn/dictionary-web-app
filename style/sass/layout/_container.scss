@@ -1,0 +1,191 @@
+.main-content {
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  @include respond-to(md) {
+    width: 60rem;
+  }
+  @include respond-to(sm) {
+    width: 50rem;
+  }
+
+  @include respond-to(sm) {
+    width: 40rem;
+  }
+  @include respond-to(phone) {
+    width: 35rem;
+    margin-top: 0;
+  }
+  @include respond-to(xs) {
+    width: 30rem;
+  }
+
+  &__section {
+    margin-top: 2.5rem;
+  }
+  &__section--top {
+    .main-content__header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .main-content__phonetic {
+      color: $color-hanpurple;
+    }
+    .header__submit-btn {
+      cursor: pointer;
+    }
+    .main-content__icon--play {
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        .play-circle {
+          fill: #a445ed;
+          opacity: 1;
+        }
+        .play-arrow {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  //
+  //section noun
+  //
+  &__section--details {
+    .main-content__subtitle {
+      display: flex;
+      align-items: center;
+      text-align: left; /* Assure que le texte s'aligne à gauche si nécessaire */
+      overflow: hidden;
+    }
+
+    .main-content__subtitle::after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background-color: $color-gainsboro;
+      margin-left: 10px;
+    }
+    .main-content__text {
+      margin: 2.5rem 0;
+      color: $color-spanishgray;
+    }
+    .main-content__list {
+      list-style: none; /* Supprime les puces par défaut */
+      padding-left: 0;
+    }
+    .main-content__item {
+      margin-top: 1rem;
+    }
+
+    .main-content__item::before {
+      content: "•";
+      color: $color-hanpurple;
+      font-size: 2rem;
+      padding-right: 1.5rem;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .main-content__synonyms {
+      margin-top: 2.5rem;
+      display: flex;
+      &-title {
+        margin-right: 2rem;
+        color: $color-spanishgray;
+        @include respond-to(sm) {
+          font-size: 1.6rem;
+        }
+        @include respond-to(phone) {
+          font-size: 1.5rem;
+        }
+      }
+      &-definition {
+        color: $color-hanpurple;
+        font-weight: 600;
+        @include respond-to(sm) {
+          font-size: 1.6rem;
+        }
+        @include respond-to(phone) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  // Verb
+  &__section--verb {
+    .main-content__subtitle {
+      display: flex;
+      align-items: center;
+      text-align: left; /* Assure que le texte s'aligne à gauche si nécessaire */
+      overflow: hidden;
+    }
+
+    .main-content__subtitle::after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background-color: $color-gainsboro;
+      margin-left: 10px;
+    }
+    .main-content__text {
+      margin: 2.5rem 0;
+      color: $color-spanishgray;
+    }
+    .main-content__list {
+      list-style: none; /* Supprime les puces par défaut */
+      padding-left: 0;
+    }
+    .main-content__item {
+      margin-top: 1rem;
+    }
+
+    .main-content__item::before {
+      content: "•";
+      color: $color-hanpurple;
+      font-size: 2rem;
+      padding-right: 1.5rem;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .main-content__synonyms {
+      margin-top: 2.5rem;
+      display: flex;
+      &-title {
+        margin-right: 2rem;
+        color: $color-spanishgray;
+      }
+      &-definition {
+        color: $color-hanpurple;
+        font-weight: 600;
+      }
+    }
+    .main-content__quote {
+      margin-top: 2.5rem;
+    }
+  }
+  &__source {
+    &-label {
+      color: $color-spanishgray;
+      margin-right: 1rem;
+    }
+    &-link {
+      color: $color-davysgray;
+      @include respond-to(sm) {
+        font-size: 1.6rem;
+      }
+      @include respond-to(phone) {
+        font-size: 1.5rem;
+      }
+      @each $state in ("", ":visited", ":hover", ":active", ":focus") {
+        &#{ $state } {
+          color: inherit;
+          text-decoration: none;
+          background-color: transparent;
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 5rem 30rem;
+  font-size: $font-size-body-m;
+  font-family: $font-family-sans-serif;
+
+  @include respond-to(lg) {
+    padding: 5rem;
+  }
+  @include respond-to(md) {
+    padding: 2.5rem;
+  }
+  @include respond-to(sm) {
+    padding: 1.5rem;
+  }
+}
